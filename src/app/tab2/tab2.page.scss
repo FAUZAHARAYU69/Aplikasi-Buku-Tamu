@@ -1,0 +1,28 @@
+ion-card {
+  border-radius: 16px;
+}
+
+ion-card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ion-card-subtitle {
+  font-size: 13px;
+  color: #666;
+}
+
+ion-item {
+  --padding-start: 0;
+  margin-bottom: 10px;
+}
+
+ion-label {
+  font-weight: 500;
+}
+
+.btn-simpan {
+  margin-top: 20px;
+  height: 45px;
+  font-size: 15px;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "aplikasibukutamu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

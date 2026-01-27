@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- HERO -->
+  <ion-card class="hero-card">
+    <ion-card-content class="ion-text-center">
+      <ion-icon name="home-outline" class="hero-icon"></ion-icon>
+      <h1>Buku Tamu Digital Desa</h1>
+      <p>
+        Aplikasi pencatatan kunjungan tamu kantor desa
+        secara rapi, aman, dan terstruktur
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- MENU -->
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-card button class="menu-card input" (click)="keInput()">
+          <ion-card-content class="ion-text-center">
+            <ion-icon name="create-outline"></ion-icon>
+            <h3>Isi Buku Tamu</h3>
+            <p>Input data kunjungan</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card button class="menu-card data" (click)="keData()">
+          <ion-card-content class="ion-text-center">
+            <ion-icon name="people-outline"></ion-icon>
+            <h3>Data Tamu</h3>
+            <p>Daftar kunjungan</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

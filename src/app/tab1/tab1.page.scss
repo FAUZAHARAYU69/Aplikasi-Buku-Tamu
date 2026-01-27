@@ -1,0 +1,49 @@
+/* HERO */
+.hero-card {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border-radius: 18px;
+  margin-bottom: 26px;
+}
+
+.hero-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/* MENU CARD */
+.menu-card {
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-card ion-icon {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+/* VARIAN WARNA */
+.menu-card.input {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.menu-card.data {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.menu-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0 2px;
+}
+
+.menu-card p {
+  font-size: 13px;
+  opacity: 0.9;
+}

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Input Buku Tamu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input label="Nama" [(ngModel)]="form.nama"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Alamat" [(ngModel)]="form.alamat"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="No HP" type="tel" [(ngModel)]="form.no_hp"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Keperluan" [(ngModel)]="form.keperluan"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="date"
+      label="Tanggal Kunjungan"
+      [(ngModel)]="form.tanggal_kunjungan">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Ditujukan Kepada"
+      [(ngModel)]="form.ditujukan_kepada">
+    </ion-input>
+  </ion-item>
+
+  <ion-button expand="block" color="primary" (click)="simpan()">
+    Simpan
+  </ion-button>
+
+</ion-content>
