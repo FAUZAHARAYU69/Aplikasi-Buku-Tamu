@@ -1,14 +1,43 @@
-ion-card {
+.tamu-card {
   margin: 12px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-ion-avatar ion-icon {
-  width: 100%;
-  height: 100%;
+ion-card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ion-card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
+ion-item {
+  --padding-start: 0;
+}
+
+ion-item ion-icon {
   color: var(--ion-color-primary);
+  font-size: 20px;
 }
 
-h2 {
-  margin: 6px 0;
-  font-weight: bold;
+ion-label h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+ion-label p {
+  font-size: 13px;
+  color: #555;
+}
+
+.empty-text {
+  margin-top: 24px;
+  display: block;
 }

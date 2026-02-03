@@ -1,42 +1,66 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Input Buku Tamu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
 
-  <ion-item>
-    <ion-input label="Nama" [(ngModel)]="form.nama"></ion-input>
-  </ion-item>
+  <!-- HEADER FORM -->
+  <ion-card class="form-header">
+    <ion-card-content class="ion-text-center">
+      <ion-icon name="create-outline"></ion-icon>
+      <h2>Form Buku Tamu</h2>
+      <p>Silakan isi data kunjungan dengan lengkap</p>
+    </ion-card-content>
+  </ion-card>
 
-  <ion-item>
-    <ion-input label="Alamat" [(ngModel)]="form.alamat"></ion-input>
-  </ion-item>
+  <!-- FORM CARD -->
+  <ion-card class="form-card">
+    <ion-card-content>
 
-  <ion-item>
-    <ion-input label="No HP" type="tel" [(ngModel)]="form.no_hp"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nama Lengkap</ion-label>
+        <ion-input [(ngModel)]="form.nama"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-input label="Keperluan" [(ngModel)]="form.keperluan"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">Alamat</ion-label>
+        <ion-input [(ngModel)]="form.alamat"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-input type="date"
-      label="Tanggal Kunjungan"
-      [(ngModel)]="form.tanggal_kunjungan">
-    </ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">No HP</ion-label>
+        <ion-input type="tel" [(ngModel)]="form.no_hp"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-input label="Ditujukan Kepada"
-      [(ngModel)]="form.ditujukan_kepada">
-    </ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">Keperluan</ion-label>
+        <ion-input [(ngModel)]="form.keperluan"></ion-input>
+      </ion-item>
 
-  <ion-button expand="block" color="primary" (click)="simpan()">
-    Simpan
-  </ion-button>
+      <ion-item>
+        <ion-label position="floating">Tanggal Kunjungan</ion-label>
+        <ion-input
+          type="date"
+          [(ngModel)]="form.tanggal_kunjungan">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ditujukan Kepada</ion-label>
+        <ion-input [(ngModel)]="form.ditujukan_kepada"></ion-input>
+      </ion-item>
+
+      <ion-button
+        expand="block"
+        color="primary"
+        class="submit-btn"
+        (click)="simpan()">
+        Simpan Data
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

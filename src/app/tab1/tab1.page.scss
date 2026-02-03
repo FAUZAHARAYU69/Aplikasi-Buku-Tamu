@@ -1,49 +1,67 @@
-/* HERO */
+/* HERO CARD */
 .hero-card {
   background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
   color: white;
-  border-radius: 18px;
-  margin-bottom: 26px;
 }
 
 .hero-icon {
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 10px;
+}
+
+.hero-card h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hero-card p {
+  font-size: 13px;
+  opacity: 0.95;
 }
 
 /* MENU CARD */
 .menu-card {
   border-radius: 18px;
-  color: white;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
-  transition: transform 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.menu-card:hover {
-  transform: translateY(-4px);
+.menu-card:active {
+  transform: scale(0.97);
+}
+
+.menu-card ion-card-content {
+  padding: 22px 10px;
 }
 
 .menu-card ion-icon {
-  font-size: 40px;
-  margin-bottom: 6px;
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-/* VARIAN WARNA */
+/* MENU INPUT */
 .menu-card.input {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #004d40;
 }
 
+/* MENU DATA */
 .menu-card.data {
-  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
 }
 
 .menu-card h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   margin: 6px 0 2px;
 }
 
 .menu-card p {
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0.9;
 }

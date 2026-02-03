@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BukuTamuService {
 
-  private simpanUrl = 'http://localhost/api/simpan.php';
-  private tampilUrl = 'http://localhost/api/tampil.php';
+  private simpanUrl = 'https://fauza.perangkatlunak.my.id/api/simpan.php';
+  private tampilUrl = 'https://fauza.perangkatlunak.my.id/api/tampil.php';
 
   constructor(private http: HttpClient) {}
 
